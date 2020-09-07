@@ -1,0 +1,31 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: $main-font;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

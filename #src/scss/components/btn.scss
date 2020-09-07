@@ -1,0 +1,18 @@
+.btn {
+	display: inline-block;
+	padding: 11px 19px;
+
+	color: #fff;
+	font-family: $main-font;
+	font-weight: 400;
+
+	background-color: $color-blue-main;
+	border: none;
+	cursor: pointer;
+
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: darken($color-blue-main, 5);
+	}
+}

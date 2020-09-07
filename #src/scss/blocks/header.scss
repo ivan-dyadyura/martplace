@@ -1,0 +1,80 @@
+.header {
+  padding: 25px 0;
+
+  background-color: $color-bg-f3;
+  // .header__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__logo
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  // .header__btn
+
+  &__btn {
+    font-size: 0.85rem;
+    line-height: 1;
+
+    background-color: #0674ec;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+  }
+
+  // .header__info
+
+  &__info {
+    margin-left: 50px;
+  }
+
+  // .header__link
+
+  &__link {
+    // .header__link--notification
+    &--notification {
+    
+    }
+
+    // .header__link--message
+    &--message {
+    }
+
+    // .header__link--basket
+    &--basket {
+    }
+  }
+
+  // .header__link-basket
+
+  &__link-basket {
+  }
+
+  // .header__profile-avatar
+
+  &__profile-avatar {
+  }
+
+  // .header__profile-info
+
+  &__profile-info {
+  }
+
+  // .header__profile-name
+
+  &__profile-name {
+  }
+
+  // .header__profile-cash
+
+  &__profile-cash {
+  }
+}
+.container {
+}
+.btn {
+}
