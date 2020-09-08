@@ -1,10 +1,5 @@
-import {lol} from './basket.js'
-import 'core-js/features/promise'
+import {stopPreloader} from './components/preloader'
 
-lol('sdsd');
-
-(new Promise(function (resolve, reject) {
-    setTimeout(resolve, 500)
-})).then(() => {
-    console.log('promise')
-})
+window.onload = () => {
+    stopPreloader()
+}

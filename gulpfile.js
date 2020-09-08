@@ -16,7 +16,8 @@ let path = {
 		lib: source_folder + "/scss/libs.scss",
 		js: source_folder + "/js/index.js",
 		img: source_folder + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
-		fonts: source_folder + "/fonts/*.ttf",
+		fonts: source_folder + "/fonts/**/*",
+		favicon: source_folder + '/favicon.png'
 	},
 	watch: {
 		html: source_folder + "/**/*.html",
@@ -152,6 +153,11 @@ function fonts() {
 		.pipe(dest(path.build.fonts))
 }
 
+function favicon() {
+	return src(path.src.favicon)
+		.pipe(dest(path.build.html))
+}
+
 
 
 function watchFiles(params) {
@@ -165,7 +171,7 @@ function clean(params) {
 	return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, favicon));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.images = images;
