@@ -24,6 +24,13 @@ body {
 	line-height: 1.4;
 }
 
+:focus {
+	outline-offset: 0px;
+	outline-style: solid;
+	outline-width: 2px;
+	outline-color: #000;
+}
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;

@@ -1,5 +1,8 @@
 let project_folder = require("path").basename(__dirname);
 let source_folder = "#src";
+let json = require('./#src/scss/libs.json');
+
+console.log(json);
 
 
 let path = {
@@ -91,12 +94,8 @@ function html() {
 }
 
 function css() {
-	var firstPath = src(path.src.lib)
-	.pipe(
-		scss({
-			outputStyle: "expanded"
-		})
-	)
+	var firstPath = src(json)
+	.pipe(rename('libs.css'))
 	.pipe(dest(path.build.css))
 	.pipe(clean_css())
 	.pipe(

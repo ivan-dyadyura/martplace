@@ -12,7 +12,42 @@
 <body>
     @@include('templates/_header.html')
 
-    <main>
+    <main class="main">
+
+        <section class="main-hero">
+            <div class="container">
+                <div class="main-hero__inner">
+                    <div class="main-hero__suptitle">
+                        Create Your Own
+                    </div>
+                    <div class="main-hero__title">
+                        Digital Product Marketplace
+                    </div>
+                    <div class="main-hero__text">
+                        MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+                    </div>
+                    <a href="" class="main-hero__link link-btn link-btn--light">View All Products</a>
+                    <a href="" class="main-hero__link link-btn link-btn--transparent">Popular Products</a>
+
+                    <div class="main-hero__search">
+                        <form class="main-hero__search-form">
+                            <div class="main-hero__search-row">
+                                <label class="visually-hidden" for="main-hero-search">Search your products...</label>
+                                <input class="main-hero__search-field" id="main-hero-search" type="search" placeholder="Search your products...">
+                                <label class="visually-hidden" for="main-hero-select">Select a category to search</label>
+                                <select class="main-hero__search-select" id="main-hero-select">
+                                    <option value="all">All Categories</option>
+                                    <option value="psd">PSD</option>
+                                    <option value="html">HTML</option>
+                                    <option value="wordpress">Wordpress</option>
+                                </select>
+                            </div>
+                            <button class="main-hero__search-btn btn">Search Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
